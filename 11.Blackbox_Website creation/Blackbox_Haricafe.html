@@ -1,0 +1,100 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Coffee Haven</title> <style> body { background-color: #F5F5DC; font-family: Arial, sans-serif; }
+    header {
+        background-color: #FFD700;
+        padding: 10px;
+        text-align: center;
+    }
+
+    nav {
+        text-align: center;
+        padding: 10px;
+    }
+
+    nav a {
+        color: #333;
+        text-decoration: none;
+        margin: 0 5px;
+        padding: 5px;
+        border-radius: 5px;
+        background-color: #FFD700;
+    }
+
+    nav a:hover {
+        background-color: #E0C800;
+    }
+
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 20px;
+    }
+
+    .product {
+        width: 30%;
+        margin-bottom: 20px;
+        background-color: #FFF;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 15px;
+        border-radius: 5px;
+    }
+
+    .product img {
+        width: 100%;
+        border-radius: 5px 5px 0 0;
+    }
+
+    .product h3 {
+        margin-top: 0;
+    }
+
+    footer {
+        background-color: #FFD700;
+        padding: 10px;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    form {
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    form label,
+    form select,
+    form textarea,
+    form input[type="submit"],
+    form input[type="reset"] {
+        flex-basis: 100%;
+        margin-bottom: 10px;
+    }
+
+    form input[type="email"],
+    form input[type="text"],
+    form input[type="number"] {
+        flex-basis: calc(100% - 10px);
+        margin-right: 5px;
+    }
+
+    form input[type="checkbox"],
+    form input[type="radio"] {
+        margin-right: 5px;
+    }
+
+    @media (max-width: 768px) {
+        .product {
+            width: 45%;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .product {
+            width: 100%;
+        }
+    }
+</style>
+</head> <body> <header> <h1>Coffee Haven</h1> </header> <nav> <a href="#" class="home-button">Home</a> </nav> <main> <div class="product"> <img src="coffee1.jpg" alt="Coffee 1"> <h3>Coffee Blend 1</h3> <p>Origin: Colombia, Brazil, Ethiopia<br>Flavor Profile: Balanced, Smooth, Chocolaty</p> </div> <div class="product"> <img src="coffee2.jpg" alt="Coffee 2"> <h3>Coffee Blend 2</h3> <p>Origin: Sumatra, Guatemala, Costa Rica<br>Flavor Profile: Rich, Earthy, Fruity</p> </div> <div class="product">
