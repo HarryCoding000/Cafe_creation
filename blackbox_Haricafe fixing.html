@@ -1,0 +1,79 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Coffee Haven</title> <style> body { background-color: #F5F5DC; font-family: Arial, sans-serif; }
+    header {
+        background-color: #FFD700;
+        padding: 10px;
+        text-align: center;
+    }
+
+    nav {
+        text-align: center;
+        padding: 10px;
+    }
+
+    nav a {
+        color: #333;
+        text-decoration: none;
+        padding: 5px;
+        border-radius: 5px;
+    }
+
+    nav a:hover {
+        background-color: #ddd;
+    }
+
+    main {
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+    }
+
+    .product-card {
+        background-color: #FFC0CB;
+        padding: 20px;
+        border-radius: 10px;
+        width: 300px;
+        text-align: center;
+    }
+
+    footer {
+        background-color: #FFD700;
+        padding: 10px;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+    form {
+        margin-bottom: 10px;
+    }
+
+    fieldset {
+        border: none;
+    }
+
+    legend {
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+
+    input, textarea, select {
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+
+    button {
+        background-color: #FFD700;
+        color: #333;
+        padding: 5px 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #E0C000;
+    }
+</style>
+</head> <body> <header> <h1>Coffee Haven</h1> </header> <nav> <a href="#">Home</a> <a href="#products">Products</a> <a href="#contact">Contact</a> </nav> <main> <div class="product-card"> <img src="coffee1.jpg" alt="Coffee 1"> <h2>Coffee Blend 1</h2> <fieldset> <legend>Subscribe to Updates</legend> <label> Email: <input type="email" id="email" name="email" required="" fdprocessedid="dz2orm"> </label> <button type="submit">Subscribe</button> </fieldset> <fieldset> <legend>Wholesale Inquiry</legend> <label> Name: <input type="text" id="name" name="name" required> </label> <label> Business Name: <input type="text" id="business" name="business" required> </label> <label> Email: <input type="email" id="email" name="email" required="" fdprocessedid="mdtn8s"> </label> <label> Message: <textarea id="message" name="message" rows="4" required></textarea> </label>
